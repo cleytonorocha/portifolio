@@ -1,0 +1,37 @@
+#main {
+  height: 40em;
+}
+
+#show > div {
+  left: 3em;
+}
+
+#photo {
+  position: absolute;
+  width: 20em;
+  height: 20em;
+  z-index: 3;
+}
+
+#bg-photo {
+  position: absolute;
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  background-color: rgb(146, 36, 46);
+  z-index: 2;
+}
+#bg-photo-blur {
+  position: absolute;
+  width: 25em;
+  height: 25em;
+  border-radius: 50%;
+  background-color: rgb(146, 36, 46);
+  filter: blur(100px);
+  z-index: 1;
+}
+#vertical-line {
+  border-left: 3px solid black;
+  width: 0.5px;
+  height: 120px;
+}
