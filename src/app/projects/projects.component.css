@@ -1,8 +1,5 @@
-.pr-photo {
-  width: 30em;
-  height: 20em;
-  border-radius: 25px;
-  background-color: white;
+section{
+    color: white;
 }
 
 #projects-div {
@@ -18,10 +15,7 @@
   );
 }
 
-#carousel-next-button{
-    right: -8em;
-}
-
-#carousel-prev-button{
-    left: -8em;
+#first-hidden-card{
+    width: 101%;
+    height: 5em;
 }
