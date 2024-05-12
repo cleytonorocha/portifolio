@@ -127,11 +127,24 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 body {
   font-family :  'Lucida Bright','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+  overflow-x: hidden;
+  overflow-y: auto !important;
 }
 
 .text-align-justify{
   text-align: justify;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ce2424;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000000; 
 }
