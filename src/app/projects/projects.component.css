@@ -2,11 +2,10 @@ section{
     color: white;
 }
 
-#projects-div {
+#projects-section {
   padding-top: 5em;
   padding-bottom: 5em;
   border-radius: 25px;
-  border-color: #885257ff !important;
   background: rgb(114, 28, 36);
   background: radial-gradient(
     circle,
