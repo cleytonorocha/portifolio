@@ -1,0 +1,25 @@
+h1{
+  font-size: 3em !important;
+}
+
+.tech-section {
+  border-radius: 25px;
+  background: rgb(114, 28, 36);
+  background: radial-gradient(
+    circle,
+    rgba(89, 23, 33, 1) 6%,
+    rgba(114, 28, 36, 1) 52%
+  );
+}
+
+.tech-skill {
+  width: 11em;
+  height: 11em;
+  border-radius: 25px;
+  font-weight: 600;
+  font-style: italic;
+}
+.tech-skill img{
+  width: 6em;
+  height: 6em;
+}

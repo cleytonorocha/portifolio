@@ -10,7 +10,7 @@ main>div{
 
 }
 #projects{
-    height: 40em;
     border-width: 5px;
     background-color: rgb(114, 28, 36);
+    overflow: auto;
 }

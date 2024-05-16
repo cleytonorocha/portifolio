@@ -1,0 +1,151 @@
+<div class="container">
+    <div class="row d-flex justify-content-between  text-white">
+        <section
+            class="col-sm-8 d-flex  flex-column justify-content-center align-items-center border border-3 tech-section mb-2">
+            <div class="container px-5 py-5">
+                <h1 class="mb-0">Technical</h1>
+                <div class="bg-white" style="width: 6em; height: 2px;"></div>
+                <h1>Skills</h1>
+            </div>
+            <div class="container mb-4 ">
+                <div class="row d-flex justify-content-sm-evenly flex-sm-wrap">
+                    <div class="tech-skill border border-3 animate__animated" [class.animate__tada]="techData.backend.isActive">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="assets/logo/java.svg" class="pt-3 mt-4" alt="Java logo">
+                            <p class="fs-md-5 pt-2">Java</p>
+                        </div>
+                    </div>
+                    <div class="tech-skill border border-3 animate__animated" [class.animate__tada]="techData.backend.isActive">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="assets/logo/springboot.svg" class="pt-3 mt-4" alt="Spring-Boot logo">
+                            <p class="fs-md-5 pt-2">Spring-Boot</p>
+                        </div>
+                    </div>
+                    <div class="tech-skill border border-3 animate__animated" [class.animate__tada]="techData.backend.isActive">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="assets/logo/springsecurity.svg" class="pt-3 mt-4" alt="Spring-Security logo">
+                            <p class="fs-md-5 pt-2">Spring-Security</p>
+                        </div>
+                    </div>
+                    <div class="tech-skill border border-3 animate__animated" [class.animate__tada]="techData.backend.isActive">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="assets/logo/hibernate.svg" class="pt-3 mt-4" alt="Hibernate logo">
+                            <p class="fs-md-5 pt-2">Hibernate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-sm mb-4">
+                <div class="row d-flex justify-content-sm-evenly flex-sm-wrap">
+                    <div class="tech-skill border border-3 animate__animated" [class.animate__tada]="techData.frontend.isActive">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="assets/logo/js.svg" class="pt-3 mt-4" alt="JS logo">
+                            <p class="fs-md-5 pt-2">JavaScript</p>
+                        </div>
+                    </div>
+                    <div class="tech-skill border border-3 animate__animated" [class.animate__tada]="techData.frontend.isActive">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="assets/logo/html5.svg" class="pt-3 mt-4" alt="HTML5 logo">
+                            <p class="fs-md-5 pt-2">HTML 5</p>
+                        </div>
+                    </div>
+                    <div class="tech-skill border border-3 animate__animated" [class.animate__tada]="techData.frontend.isActive">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="assets/logo/css3.svg" class="pt-3 mt-4" alt="CSS3 logo">
+                            <p class="fs-md-5 pt-2">CSS 3</p>
+                        </div>
+                    </div>
+                    <div class="tech-skill border border-3 animate__animated" [class.animate__tada]="techData.frontend.isActive">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="assets/logo/angular.svg" class="pt-3 mt-4" alt="Angular logo">
+                            <p class="fs-md-5 pt-2">Angular</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-sm mb-4">
+                <div class="row d-flex justify-content-sm-evenly flex-sm-wrap">
+                    <div class="tech-skill border border-3 animate__animated" [class.animate__tada]="techData.frontend.isActive">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="assets/logo/bootstrap.svg" class="pt-3 mt-4" alt="Bootstrap logo">
+                            <p class="fs-md-5 pt-2">Bootstrap</p>
+                        </div>
+                    </div>
+                    <div class="tech-skill border border-3 animate__animated" [class.animate__tada]="techData.frontend.isActive">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="assets/logo/ts.svg" class="pt-3 mt-4" alt="TypeScript logo">
+                            <p class="fs-md-5 pt-2">TypeScript</p>
+                        </div>
+                    </div>
+                    <div class="tech-skill border border-3 animate__animated" [class.animate__tada]="techData.banco.isActive">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="assets/logo/mysql.svg" class="pt-3 mt-4" alt="Mysql logo">
+                            <p class="fs-md-5 pt-2">MySQL</p>
+                        </div>
+                    </div>
+                    <div class="tech-skill border border-3 animate__animated" [class.animate__tada]="techData.banco.isActive">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="assets/logo/postgresql.svg" class="pt-3 mt-4" alt="PostgreSQL logo">
+                            <p class="fs-md-5 pt-2">PostgreSQL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-sm mb-sm-4">
+                <div class="row d-flex justify-content-sm-evenly flex-sm-wrap">
+                    <div class="tech-skill border border-3 animate__animated" [class.animate__tada]="techData.devops.isActive">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="assets/logo/docker.svg" class="pt-3 mt-4" alt="Docker logo">
+                            <p class="fs-md-5 pt-2">Docker</p>
+                        </div>
+                    </div>
+                    <div class="tech-skill border border-3">
+                        <div class="d-flex flex-column align-items-center animate__animated" [class.animate__tada]="techData.banco.isActive">
+                            <img src="assets/logo/mongodb.svg" class="pt-3 mt-4" alt="MongoDB logo">
+                            <p class="fs-md-5 pt-2">MongoDB</p>
+                        </div>
+                    </div>
+                    <div class="tech-skill border border-3 animate__animated" [class.animate__tada]="techData.backend.isActive">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="assets/logo/junit5.svg" class="pt-3 mt-4" alt="JUnit5 logo">
+                            <p class="fs-md-5 pt-2">JUnit 5</p>
+                        </div>
+                    </div>
+                    <div class="tech-skill border border-3 animate__animated" [class.animate__tada]="techData.devops.isActive">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="assets/logo/linux.svg" class="pt-3 mt-4" alt="Linux logo">
+                            <p class="fs-md-5 pt-2">Linux</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="col container d-flex flex-column justify-content-between pe-lg-0 mb-2">
+            <div class="container">
+                <section class="row border border-3 tech-section justify-content-center pt-4 mb-2">
+                    <h1 class="text-decoration-underline text-center"
+                        style="font-size: 3em !important; margin-bottom: 2em;">
+                        Statistics
+                    </h1>
+                    <div style="position: relative; height:20em; width:20em">
+                        <canvas id="chart"></canvas>
+                    </div>
+                </section>
+            </div>
+            <div class="container">
+                <section class="row border border-3 tech-section justify-content-center pt-4">
+                    <h1 class="text-decoration-underline text-center"
+                        style="font-size: 3em !important; margin-bottom: 2em;">
+                        Bagdes
+                    </h1>
+                    <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=6EA15FDF819DB92B6FA554A9FD14AEE618C95E5F949298482F887492A4F24343"
+                        target="_blank" class="text-center" style="position: relative; height:20em; width:20em">
+                        <img src="assets/badges/oracle-foundation.png" class="img-fluid"
+                            style="position: relative; height:15em; width:15em"
+                            alt="Badge da certificação oracle foundation associate">
+                    </a>
+                </section>
+            </div>
+        </div>
+    </div>

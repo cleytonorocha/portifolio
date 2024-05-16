@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { ApresentationComponent } from './main/apresentation.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { TechComponent } from './tech/tech.component';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,8 @@ import { ProjectsComponent } from './projects/projects.component';
     RouterOutlet,
     NavBarComponent,
     ApresentationComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    TechComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
