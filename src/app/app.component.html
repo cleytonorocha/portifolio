@@ -1,12 +1,11 @@
-<app-nav-bar />
-    <section class="ps-5 pe-5 border border-black border-start-0 border-end-0 border-2">
-        <app-apresentation />
-    </section>
+<app-nav-bar class="border-black border-start-0 border-end-0 border-2 fixed-top"/>
+<section class="row mb-5">
+    <app-apresentation/>
+</section>
 
-    <section id="projects" style="height: auto;">
-        <hr class="white-line">
-        <app-projects />
-        <hr class="white-line">
-        <app-tech  class="container"/>
-        <hr class="white-line">
-    </section>
+<section id="redSections" style="height: auto;">
+    <app-projects id="projects" />
+    <app-tech id="tech" />
+</section>
+<app-contact id="contact" />
+<router-outlet/>

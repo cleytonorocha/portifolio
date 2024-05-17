@@ -1,15 +1,8 @@
 main>div{
     margin-bottom: 15%;
 }
-.white-line{
-    border: 0;
-    height: 5px;
-    background-color: #e3e3e3ff;
-    margin-top: 4em;
-    margin-bottom: 4em;
 
-}
-#projects{
+#redSections{
     border-width: 5px;
     background-color: rgb(114, 28, 36);
     overflow: auto;
