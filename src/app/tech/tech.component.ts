@@ -1,16 +1,16 @@
-import { Component, Injectable, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Chart, registerables } from 'chart.js';
 import { BaseChartDirective } from 'ng2-charts';
 import { tech } from './tech';
 import { ActiveTech } from '../interfaces/ActiveTech';
-import { mapToCanActivateChild } from '@angular/router';
+import { CommonModule, NgClass } from '@angular/common'; 
 
 Chart.register(...registerables)
 
 @Component({
   selector: 'app-tech',
   standalone: true,
-  imports: [BaseChartDirective],
+  imports: [NgClass,BaseChartDirective],
   templateUrl: './tech.component.html',
   styleUrl: './tech.component.css'
 })
@@ -64,7 +64,6 @@ export class TechComponent implements OnInit {
         onClick(event, elements, chart) {
           const indiceElemento = elements[0].index;
           techData.techControlActive(indiceElemento);
-          setTimeout(()=> techData.reset(),500);
         },
       },
     });

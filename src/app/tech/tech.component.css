@@ -1,4 +1,4 @@
-h1{
+h1 {
   font-size: 3em !important;
 }
 
@@ -19,7 +19,10 @@ h1{
   font-weight: 600;
   font-style: italic;
 }
-.tech-skill img{
+.tech-skill-active {
+  background-color: green !important;
+}
+.tech-skill img {
   width: 6em;
   height: 6em;
 }
