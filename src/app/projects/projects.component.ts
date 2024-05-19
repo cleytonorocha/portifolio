@@ -22,7 +22,6 @@ export class ProjectsComponent{
   ];
 
   constructor(){
-    console.log(stuffingTavern.image.imageUrl)
   }
 
 }

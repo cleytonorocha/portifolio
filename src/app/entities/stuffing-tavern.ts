@@ -2,13 +2,13 @@ import { Projects } from "../interfaces/Projects";
 
 export const stuffingTavern: Projects = {
     title: "Stuffing Tavern",
-    thumbnailURL: "assets/projects-img/stuffing-tavern/thumbnail.jpg",
+    thumbnailURL: "assets/projects-img/stuffing-tavern/thumbnail.png",
     image: {
         imageUrl: [
-            "assets/projects-img/stuffing-tavern/thumbnail.jpg",
+            "assets/projects-img/stuffing-tavern/thumbnail.png",
             "assets/projects-img/stuffing-tavern/img/1.png",
             "assets/projects-img/stuffing-tavern/img/2.png",
-            "assets/projects-img/stuffing-tavern/img/3.jpg"
+            "assets/projects-img/stuffing-tavern/img/3.png"
         ],
         alt: "Carrosel de imagens do Stuffing Tavern"
     },

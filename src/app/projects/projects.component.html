@@ -1,6 +1,6 @@
 <hr class="white-line">
 <section class="container text-center border border-3 border-light " id="projects-section">
-    <p class="pt-3 text-white fs-1 text-decoration-underline">Projetos</p>
+    <p class="pt-3 text-white fs-1 text-decoration-underline">Projects</p>
     <div class="container">
         <div class="row">
             @for (project of projectData; track $index) {
@@ -15,7 +15,7 @@
                 </div>
             </div>
             <!-- Modal -->
-            <div class="modal modal-xl fade " id="modalProject" tabindex="0" aria-labelledby="#modalProjectXl"
+            <div class="modal modal-xl fade" id="modalProject" tabindex="-1" aria-labelledby="#modalProject"
                 aria-hidden="true" data-bs-theme="dark">
                 <div class="modal-dialog text-white">
                     <div class="modal-content bg-dark">
@@ -42,7 +42,7 @@
                                         </div>
                                         <div class="carousel-inner">
                                             @for (image of project.image.imageUrl; track $index) {
-                                            <div class="carousel-item active">
+                                            <div class="carousel-item active" id="{{'modal'+$index}}">
                                                 <img src="{{ image }}" class="img-fluid d-block w-100"
                                                     alt="{{ project.image.alt }}">
                                             </div>
