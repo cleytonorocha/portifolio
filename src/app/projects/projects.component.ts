@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Projects } from '../interfaces/Projects';
+import { stuffingTavern } from '../entities/stuffing-tavern';
 
 @Component({
   selector: 'app-projects',
@@ -7,6 +9,20 @@ import { Component } from '@angular/core';
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })
-export class ProjectsComponent {
+export class ProjectsComponent{
+  
+  public projectData : Projects[] = [
+    stuffingTavern,
+    stuffingTavern,
+    stuffingTavern,
+    stuffingTavern,
+    stuffingTavern,
+    stuffingTavern
+
+  ];
+
+  constructor(){
+    console.log(stuffingTavern.image.imageUrl)
+  }
 
 }

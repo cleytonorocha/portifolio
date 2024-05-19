@@ -1,4 +1,3 @@
-
 #projects-section {
   padding-top: 5em;
   padding-bottom: 5em;
@@ -10,8 +9,7 @@
     rgba(114, 28, 36, 1) 52%
   );
 }
-
-#first-hidden-card{
-    width: 101%;
-    height: 5em;
+#card-project:hover {
+  filter: brightness(70%) !important;
+  cursor: pointer;
 }
