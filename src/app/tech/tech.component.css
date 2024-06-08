@@ -11,8 +11,8 @@ h1 {
   );
 }
 .tech-skill {
-  width: 9em;
-  height: 9em;
+  width: 11em;
+  height: 11em;
   border-radius: 25px;
   font-weight: 600;
   font-style: italic;
@@ -23,8 +23,9 @@ h1 {
   background-color: green !important;
 }
 .tech-skill img {
-  width: 5em;
-  height: 5em;
+  width: 6em;
+  height: 6em;
   padding-top: 1em;
+  margin-bottom: 1em;
   margin-top: 15px;
 }
