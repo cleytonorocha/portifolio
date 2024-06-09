@@ -1,22 +1,22 @@
 <hr class="white-line">
 <section class="container text-center border border-3 border-light " id="projects-section">
-    <p class="pt-3 text-white fs-1 text-decoration-underline">Projects</p>
+    <p class="pt-3 text-white fs-1 text-decoration-underline">Projetos</p>
     <div class="container">
         <div class="row">
             @for (project of projectData; track $index) {
             <!-- Card -->
-            <div  class="col-md-4 mt-5" data-bs-toggle="modal" data-bs-target="#modalProject">
-                <div class="card" id="card-project">
-                    <img src="{{ project.thumbnailURL }}" class="card-img-top" alt="...">
-                    <div class="card-body ">
+            <div class="col-md-4 mt-5" data-bs-toggle="modal" [attr.data-bs-target]="'#idModal'+project.id+$index">
+                <div class="card" id="card-project" style="height: 100%;">
+                    <img src="{{ project.thumbnailURL }}" class="card-img-top" alt="{{ project.image.alt }}" style="height: 90%;">
+                    <div class="card-body" style="height: 8em;">
                         <h5 class="card-title flex-fill">{{ project.title }}</h5>
                         <p class="card-text">{{ project.shortExplication }}</p>
                     </div>
                 </div>
             </div>
             <!-- Modal -->
-            <div class="modal modal-xl fade" id="modalProject" tabindex="-1" aria-labelledby="#modalProject"
-                aria-hidden="true" data-bs-theme="dark">
+            <div class="modal modal-xl fade" [id]="'idModal'+project.id+$index" tabindex="-1"
+                [attr.aria-labelledby]="'idModal'+project.id+$index" aria-hidden="true" data-bs-theme="dark">
                 <div class="modal-dialog text-white">
                     <div class="modal-content bg-dark">
                         <div class="modal-header" style="text-align: center;">
@@ -25,36 +25,27 @@
                         </div>
                         <div class="modal-body">
                             <div class="container">
-                                <div class="container py-4 border border-light-subtle border-1 mx-2">
-                                    @defer (on timer(5500ms)) {
-                                    <div id="carouselExampleIndicators" class="carousel slide">
-                                        <div class="carousel-indicators">
-                                            <button type="button" data-bs-target="#carouselExampleIndicators"
-                                                data-bs-slide-to="0" class="active" aria-current="true"
-                                                aria-label="Slide 1"></button>
-                                            <button type="button" data-bs-target="#carouselExampleIndicators"
-                                                data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                            <button type="button" data-bs-target="#carouselExampleIndicators"
-                                                data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                            <button type="button" data-bs-target="#carouselExampleIndicators"
-                                                data-bs-slide-to="3" aria-label="Slide 4"></button>
-
-                                        </div>
-                                        <div class="carousel-inner">
+                                <div
+                                    class="row d-flex align-items-center justify-content-center py-4 border border-light-subtle border-1 mx-2">
+                                    @defer (on timer(500ms)) {
+                                    <div [id]="'carouselExampleIndicators'+project.id+$index" class="carousel slide">
+                                        <div class="carousel-inner ">
                                             @for (image of project.image.imageUrl; track $index) {
-                                            <div class="carousel-item active" id="{{'modal'+$index}}">
-                                                <img src="{{ image }}" class="img-fluid d-block w-100"
-                                                    alt="{{ project.image.alt }}">
+                                            <div class="carousel-item active " id="{{'modal'+ project.title + $index}}">
+                                                <img src="{{ image }}" class="d-block w-100 "
+                                                    alt="{{ project.image.alt }}" style="height: 40em">
                                             </div>
                                             }
                                         </div>
                                         <button class="carousel-control-prev bg-light-subtle" type="button"
-                                            data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                            [attr.data-bs-target]="'#carouselExampleIndicators'+project.id+$index"
+                                            data-bs-slide="prev">
                                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                             <span class="visually-hidden">Previous</span>
                                         </button>
                                         <button class="carousel-control-next bg-light-subtle" type="button"
-                                            data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                            [attr.data-bs-target]="'#carouselExampleIndicators'+project.id+$index"
+                                            data-bs-slide="next">
                                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                             <span class="visually-hidden">Next</span>
                                         </button>
@@ -85,8 +76,11 @@
                                 </div>
                             </div>
 
-                            <button class="btn btn-dark border-light-subtle mt-5">
-                                <i class="fa-brands fa-github fa-2x "> Github </i>
+                            <button class="btn btn-dark border-light-subtle mt-5 mx-2">
+                                <a href="{{ project.github }}" target="_blank" class="text-white"><i class="fa-brands fa-github fa-1x "> Github </i></a>
+                            </button>
+                            <button type="button" class="btn btn-dark border-light-subtle mt-5 mx-2">
+                                <a href="{{ project.deploy }}" target="_blank" class="text-white"><i class="fa-solid fa-globe fa-1x "> Deploy </i></a>
                             </button>
                         </div>
                     </div>

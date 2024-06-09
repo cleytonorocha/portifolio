@@ -8,5 +8,7 @@ export interface Projects {
     readonly shortExplication: string,
     readonly tech: string[],
     readonly github: string,
-    readonly longText: string
+    readonly deploy: string,
+    readonly longText: string,
+    readonly id: string
 }
