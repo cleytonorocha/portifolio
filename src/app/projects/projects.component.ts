@@ -1,13 +1,17 @@
 import { Component } from '@angular/core';
-import { Projects } from '../interfaces/Projects';
-import { stuffingTavern } from '../entities/stuffing-tavern';
 import { librarySystem } from '../entities/library-system';
+import { stuffingTavern } from '../entities/stuffing-tavern';
 import { tddLibrary } from '../entities/tdd-library';
+import { Projects } from '../interfaces/Projects';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [],
+  imports: [
+    CarouselModule
+  ],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })

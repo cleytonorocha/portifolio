@@ -3,6 +3,7 @@
     <p class="pt-3 text-white fs-1 text-decoration-underline">Projetos</p>
     <div class="container">
         <div class="row">
+
             @for (project of projectData; track $index) {
             <!-- Card -->
             <div class="col-md-4 mt-5" data-bs-toggle="modal" [attr.data-bs-target]="'#idModal'+project.id+$index">
@@ -28,34 +29,15 @@
                             <div class="container">
                                 <div
                                     class="row d-flex align-items-center justify-content-center py-4 border border-light-subtle border-1 mx-2">
-                                    @defer (on timer(500ms)) {
-                                    <div [id]="'carouselExampleIndicators'+project.id+$index" class="carousel slide">
-                                        <div class="carousel-inner ">
-                                            @for (image of project.image.imageUrl; track $index) {
-                                            <div class="carousel-item active " id="{{'modal'+ project.title + $index}}">
-                                                <img  src="{{ image }}" class="d-block w-100 "
-                                                    alt="{{ project.image.alt }}" >
-                                            </div>
-                                            }
-                                        </div>
-                                        <button class="carousel-control-prev bg-light-subtle" type="button"
-                                            [attr.data-bs-target]="'#carouselExampleIndicators'+project.id+$index"
-                                            data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next bg-light-subtle" type="button"
-                                            [attr.data-bs-target]="'#carouselExampleIndicators'+project.id+$index"
-                                            data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
-                                    </div>
-                                    }@placeholder {
-                                    <div class="spinner-border text-secondary" role="status">
-                                        <span class="visually-hidden">Loading...</span>
-                                    </div>
-                                    }
+                                    <carousel>
+                                        @for (image of project.image.imageUrl; track $index) {
+                                        <slide>
+                                            <img src="{{ image }}" alt="{{ project.image.alt }}"
+                                                style="display: block; width: 100%;"
+                                                id="{{'modal'+ project.title + $index}}">
+                                        </slide>
+                                        }
+                                    </carousel>
                                 </div>
                                 <div class="row d-flex justify-content-center">
                                     <div class="row border-bottom border-2">
