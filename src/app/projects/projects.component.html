@@ -7,7 +7,8 @@
             <!-- Card -->
             <div class="col-md-4 mt-5" data-bs-toggle="modal" [attr.data-bs-target]="'#idModal'+project.id+$index">
                 <div class="card" id="card-project" style="height: 100%;">
-                    <img src="{{ project.thumbnailURL }}" class="card-img-top" alt="{{ project.image.alt }}" style="height: 90%;">
+                    <img src="{{ project.thumbnailURL }}" class="card-img-top" alt="{{ project.image.alt }}"
+                        style="height: 90%;" id="{{'thumbnail'+ project.title + $index}}">
                     <div class="card-body" style="height: 8em;">
                         <h5 class="card-title flex-fill">{{ project.title }}</h5>
                         <p class="card-text">{{ project.shortExplication }}</p>
@@ -32,8 +33,8 @@
                                         <div class="carousel-inner ">
                                             @for (image of project.image.imageUrl; track $index) {
                                             <div class="carousel-item active " id="{{'modal'+ project.title + $index}}">
-                                                <img src="{{ image }}" class="d-block w-100 "
-                                                    alt="{{ project.image.alt }}" style="height: 40em">
+                                                <img  src="{{ image }}" class="d-block w-100 "
+                                                    alt="{{ project.image.alt }}" >
                                             </div>
                                             }
                                         </div>
@@ -75,13 +76,18 @@
                                     </div>
                                 </div>
                             </div>
-
-                            <button class="btn btn-dark border-light-subtle mt-5 mx-2">
-                                <a href="{{ project.github }}" target="_blank" class="text-white"><i class="fa-brands fa-github fa-1x "> Github </i></a>
-                            </button>
-                            <button type="button" class="btn btn-dark border-light-subtle mt-5 mx-2">
-                                <a href="{{ project.deploy }}" target="_blank" class="text-white"><i class="fa-solid fa-globe fa-1x "> Deploy </i></a>
-                            </button>
+                            <a href="{{ project.github }}" target="_blank" class="text-white">
+                                <button class="btn btn-dark border-light-subtle mt-5 mx-2">
+                                    <i class="fa-brands fa-github fa-1x "> Github </i>
+                                </button>
+                            </a>
+                            @if (project.deploy !== "") {
+                            <a href="{{ deploy(project.deploy) }}" target="_blank" class="text-white">
+                                <button type="button" class="btn btn-dark border-light-subtle mt-5 mx-2">
+                                    <i class="fa-solid fa-globe fa-1x "> Deploy </i>
+                                </button>
+                            </a>
+                            }
                         </div>
                     </div>
                 </div>

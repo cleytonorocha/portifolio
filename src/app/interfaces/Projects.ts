@@ -10,5 +10,5 @@ export interface Projects {
     readonly github: string,
     readonly deploy: string,
     readonly longText: string,
-    readonly id: string
+    readonly id: string 
 }
