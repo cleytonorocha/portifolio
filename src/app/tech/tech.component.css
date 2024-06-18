@@ -29,3 +29,22 @@ h1 {
   margin-bottom: 1em;
   margin-top: 15px;
 }
+
+@media only screen and (max-width: 420px) {
+  .tech-skill {
+    width: 8em;
+    height: 8em;
+    border-radius: 25px;
+    text-wrap: nowrap;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 1em;
+  }
+  .tech-skill img {
+    width: 4em;
+    height: 4em;
+    padding-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-top: 10px;
+  }
+}
