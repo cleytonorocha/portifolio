@@ -2,6 +2,7 @@ import { Projects } from "../interfaces/Projects";
 
 export const librarySystem: Projects = {
     title: "Library System",
+    video : "",
     thumbnailURL: "assets/projects-img/library/thumbnail.png",
     image: {
         imageUrl: [

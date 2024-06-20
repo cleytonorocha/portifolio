@@ -1,5 +1,6 @@
 export interface Projects {
     readonly title: string,
+    readonly video: string,
     readonly thumbnailURL : string,
     readonly image: {
         imageUrl : string[],

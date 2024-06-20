@@ -2,6 +2,7 @@ import { Projects } from "../interfaces/Projects";
 
 export const tddLibrary: Projects = {
     title: "TDD-Library",
+    video : "",
     thumbnailURL: "assets/projects-img/library-tdd-test/TDD.jpg",
     image: {
         imageUrl: [

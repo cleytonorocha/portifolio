@@ -2,6 +2,7 @@ import { Projects } from "../interfaces/Projects";
 
 export const jdbc: Projects = {
     title: "",
+    video : "",
     thumbnailURL: "assets/projects-img/jdbc/imagem1.png",
     image: {
         imageUrl: [

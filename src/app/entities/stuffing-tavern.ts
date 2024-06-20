@@ -2,6 +2,7 @@ import { Projects } from "../interfaces/Projects";
 
 export const stuffingTavern: Projects = {
     title: "Stuffing Tavern",
+    video : "",
     thumbnailURL: "assets/projects-img/stuffing-tavern/thumbnail.png",
     image: {
         imageUrl: [
