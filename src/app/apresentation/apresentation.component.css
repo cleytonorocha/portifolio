@@ -33,7 +33,7 @@
 }
 @media screen and (max-width: 768px) {
   #main {
-    height: 35em;
+    height: 45em;
   }
   #photo {
     position: static; 

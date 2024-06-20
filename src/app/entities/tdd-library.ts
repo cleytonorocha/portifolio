@@ -2,9 +2,10 @@ import { Projects } from "../interfaces/Projects";
 
 export const tddLibrary: Projects = {
     title: "TDD-Library",
-    thumbnailURL: "assets/projects-img/library-tdd-test/thumbnail.png",
+    thumbnailURL: "assets/projects-img/library-tdd-test/TDD.jpg",
     image: {
         imageUrl: [
+            "assets/projects-img/library-tdd-test/TDD.jpg",
             "assets/projects-img/library-tdd-test/image.png",
         ],
         alt: "Carrosel de imagens da aplicação tdd system"

@@ -4,6 +4,7 @@ import { stuffingTavern } from '../entities/stuffing-tavern';
 import { tddLibrary } from '../entities/tdd-library';
 import { Projects } from '../interfaces/Projects';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { jdbc } from '../entities/jdbc';
 
 
 @Component({
@@ -22,7 +23,7 @@ export class ProjectsComponent{
     stuffingTavern,
     librarySystem,
     tddLibrary,
-    stuffingTavern,
+    jdbc,
     stuffingTavern,
     stuffingTavern
 
