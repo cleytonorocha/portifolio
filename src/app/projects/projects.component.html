@@ -9,7 +9,7 @@
             <div class="col-md-4 mt-5" data-bs-toggle="modal" [attr.data-bs-target]="'#idModal'+project.id+$index">
                 <div class="card" id="card-project" style="height: 100%;">
                     <img src="{{ project.thumbnailURL }}" class="card-img-top" alt="{{ project.image.alt }}"
-                        style="height: 90%;" id="{{'thumbnail'+ project.title + $index}}">
+                        style="height: 90%; object-fit: cover;" id="{{'thumbnail'+ project.title + $index}}">
                     <div class="card-body" style="height: 8em;">
                         <h5 class="card-title flex-fill">{{ project.title }}</h5>
                         <p class="card-text">{{ project.shortExplication }}</p>
