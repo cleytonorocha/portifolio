@@ -14,7 +14,8 @@
   width: 20em;
   height: 20em;
   border-radius: 50%;
-  background-color: rgb(146, 36, 46);
+  background: rgb(146,36,46);
+  background: radial-gradient(circle, rgba(146,36,46,1) 0%, rgba(214,49,82,1) 100%);
   z-index: 2;
 }
 #bg-photo-blur {
@@ -22,7 +23,7 @@
   width: 25em;
   height: 25em;
   border-radius: 50%;
-  background-color: rgb(146, 36, 46);
+  background-color: rgba(146, 36, 45, 0.705);
   filter: blur(100px);
   z-index: 1;
 }
@@ -30,6 +31,14 @@
   border-left: 3px solid black;
   width: 0.5px;
   height: 120px;
+}
+
+@media screen and (max-width: 1180px) {
+  #bg-photo-blur {
+    position: static; 
+    width: 0px ;
+    height: 0px ;
+  }
 }
 @media screen and (max-width: 768px) {
   #main {
@@ -46,11 +55,7 @@
       width: 0px ;
       height: 0px ;
   }
-  #bg-photo-blur {
-    position: static; 
-    width: 0px ;
-    height: 0px ;
-  }
+
   #vertical-line {
     border-left: 3px solid black;
     width: auto;
