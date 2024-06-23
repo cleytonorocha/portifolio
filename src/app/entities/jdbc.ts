@@ -6,8 +6,7 @@ export const jdbc: Projects = {
     thumbnailURL: "assets/projects-img/jdbc/imagem1.png",
     image: {
         imageUrl: [
-            "assets/projects-img/library/image1.png",
-            "assets/projects-img/library/image2.png",
+            "assets/projects-videos/java_jdbc.gif"
         ],
         alt: "Carrosel de imagens da aplicação jdbc"
     },
