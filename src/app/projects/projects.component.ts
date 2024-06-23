@@ -24,8 +24,8 @@ export class ProjectsComponent{
     librarySystem,
     tddLibrary,
     jdbc,
-    stuffingTavern,
-    stuffingTavern
+    // stuffingTavern,
+    // stuffingTavern
 
   ];
 
