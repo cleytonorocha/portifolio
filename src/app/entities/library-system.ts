@@ -3,7 +3,7 @@ import { Projects } from "../interfaces/Projects";
 export const librarySystem: Projects = {
     title: "Library System",
     video : "",
-    thumbnailURL: "assets/projects-img/library/thumbnail.png",
+    thumbnailURL: "assets/projects-img/library/image1.png",
     image: {
         imageUrl: [
             "assets/projects-img/library/image1.png",
@@ -11,7 +11,7 @@ export const librarySystem: Projects = {
         ],
         alt: "Carrosel de imagens da aplicação library system"
     },
-    shortExplication: "Biblioteca está aberta!",
+    shortExplication: "API de biblioteca com SPRING FRAMEWORK",
     tech: ["JAVA", "SPRING BOOT", "SPRING SECURITY 6", "JWT", "SOLID", "POO", "PROGRAMAÇÃO FUNCIONAL", "DESIGNER PATTERN", "SWAGGER-UI", "PROXY REVERSO", "DOCKER", "NGINX", "OCI-VPS", "SSL", "DTO", "VO"],
     github: "https://github.com/Cleyton-ORocha/library_system",
     deploy: "https://library.cleytonorocha.com.br/swagger-ui/index.html#/",
