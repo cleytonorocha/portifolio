@@ -39,6 +39,20 @@
                                         }
                                     </carousel>
                                 </div>
+                                <div class="mt-3 mb-5">
+                                    <a href="{{ project.github }}" target="_blank" class="text-white">
+                                        <button class="btn btn-dark border-light-subtle mx-2">
+                                            <i class="fa-brands fa-github fa-1x "> Github </i>
+                                        </button>
+                                    </a>
+                                    @if (project.deploy !== "") {
+                                    <a href="{{ deploy(project.deploy) }}" target="_blank" class="text-white">
+                                        <button type="button" class="btn btn-dark border-light-subtle mx-2">
+                                            <i class="fa-solid fa-globe fa-1x "> Deploy </i>
+                                        </button>
+                                    </a>
+                                    }
+                                </div>
                                 <div class="row d-flex justify-content-center">
                                     <div class="row border-bottom border-2">
                                         <h5 class="fs-4 my-3"> {{ project.shortExplication }} </h5>
@@ -58,18 +72,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="{{ project.github }}" target="_blank" class="text-white">
-                                <button class="btn btn-dark border-light-subtle mt-5 mx-2">
-                                    <i class="fa-brands fa-github fa-1x "> Github </i>
-                                </button>
-                            </a>
-                            @if (project.deploy !== "") {
-                            <a href="{{ deploy(project.deploy) }}" target="_blank" class="text-white">
-                                <button type="button" class="btn btn-dark border-light-subtle mt-5 mx-2">
-                                    <i class="fa-solid fa-globe fa-1x "> Deploy </i>
-                                </button>
-                            </a>
-                            }
+                            
                         </div>
                     </div>
                 </div>
