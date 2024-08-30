@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { jdbc } from '../entities/jdbc';
 import { librarySystem } from '../entities/library-system';
+import { ollama } from '../entities/ollama';
 import { stuffingTavern } from '../entities/stuffing-tavern';
 import { tddLibrary } from '../entities/tdd-library';
 import { Projects } from '../interfaces/Projects';
-import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { jdbc } from '../entities/jdbc';
 
 
 @Component({
@@ -24,6 +25,7 @@ export class ProjectsComponent{
     librarySystem,
     tddLibrary,
     jdbc,
+    ollama
     // stuffingTavern,
     // stuffingTavern
 
